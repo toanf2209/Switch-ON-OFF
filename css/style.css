@@ -1,0 +1,117 @@
+body {
+	background-image: url("https://phunthuoctudong.com/storage/225/sprinkler.-01-e1618910832923.jpg");
+	height: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hien-thi-do-am {
+    width: 80%; 
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff; 
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    text-align: center; 
+}
+
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666; 
+}
+h2 {
+	font-size: 3rem;
+	color: #333;
+	background-color: #fff;
+	border-radius: 5px;
+}
+h3 {
+	font-size: 2rem;
+}
+/*switching button css*/
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 150px;
+	height: 60px;
+}
+
+.switch .checkbox {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 3;
+}
+
+.switch .knobs:before, .switch .knobs:after, .switch .knobs span {
+	position: absolute;
+	top: 10px;
+	width: 40px;
+	height: 25px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 1;
+	padding: 9px 4px;
+	border-radius: 50%;
+	transition: 0.3s ease all;
+}
+
+.switch .knobs {
+	z-index: 2;
+}
+
+.switch .knobs, .switch .layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border: 1px solid #d5d5d5;
+	border-radius: 30px;
+}
+
+.switch .layer {
+	background-color: #fff;
+	transition: 0.3s ease all;
+	z-index: 1;
+}
+
+.switch .knobs:before, .switch .knobs:after {
+	color: #a7acaf;
+	z-index: 1;
+}
+
+.switch .knobs:before {
+	content: 'On';
+	left: 4px;
+}
+
+.switch .knobs:after {
+	content: 'Off';
+	right: 12px;
+}
+
+.switch .knobs span {
+	width: 44px;
+	height: 34px;
+	top: 3px;
+	z-index: 2;
+}
+
+.switch .knobs span {
+	right: 91px;
+	background-color: #a7acaf;
+}
+
+.switch .checkbox:checked + .knobs span {
+	right: 5px;
+	background-color: #81bb33;
+}
